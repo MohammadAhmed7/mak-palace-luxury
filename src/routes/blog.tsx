@@ -4,8 +4,6 @@ import { PageHeader } from "@/components/PageHeader";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
-import imgRestaurant from "@/assets/img-restaurant.png";
-import imgBanquet from "@/assets/img-banquet.png";
 import breakfast from "@/assets/breakfast.jpg";
 
 export const Route = createFileRoute("/blog")({
@@ -41,14 +39,14 @@ const posts = [
     category: "Kitchen",
     date: "Placeholder date",
     excerpt: "Our head chef on heat, patience, and why the last twenty minutes decide the dish.",
-    image: imgRestaurant,
+    image: "/blog-kitchen.jpg",
   },
   {
     title: "How we set a hall for three hundred",
     category: "Events",
     date: "Placeholder date",
     excerpt: "The order of operations behind a banquet, from floor plan to the final light check.",
-    image: imgBanquet,
+    image: "/blog-event.jpg",
   },
   {
     title: "The case for a properly early breakfast",

@@ -3,7 +3,6 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/PageHeader";
 import imgRestaurantHall from "@/assets/img-restaurant-hall.jpg";
 import imgRestaurantFood from "@/assets/img-restaurant-food.jpg";
-import imgBanquet from "@/assets/img-banquet.png";
 import breakfast from "@/assets/breakfast.jpg";
 
 export const Route = createFileRoute("/restaurant")({
@@ -95,8 +94,8 @@ function RestaurantPage() {
 
       <section className="relative overflow-hidden">
         <img
-          src={imgBanquet}
-          alt="Banquet hall prepared for a private dinner"
+          src="/restaurant-images/private-dining-kitchen.jpg"
+          alt="Private dining setting"
           loading="lazy"
           width={1600}
           height={1000}
@@ -106,14 +105,14 @@ function RestaurantPage() {
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
             <Reveal className="max-w-xl">
-              <p className="eyebrow">Private dining &amp; events</p>
-              <h2 className="mt-3 text-3xl sm:mt-4 sm:text-4xl md:text-5xl">The hall, for whatever the occasion is</h2>
+              <p className="eyebrow">Private dining</p>
+              <h2 className="mt-3 text-3xl sm:mt-4 sm:text-4xl md:text-5xl">A table, set apart</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:mt-5">
-                Set menus for private dinners of twenty, full banquet service for three hundred.
-                One coordinator, from first call to last guest.
+                A quieter corner of the kitchen for small groups — a set menu, cooked to order,
+                served without the rest of the room watching.
               </p>
-              <Link to="/events" className="btn-gold mt-7 sm:mt-9">
-                Plan your event
+              <Link to="/contact" className="btn-gold mt-7 sm:mt-9">
+                Reserve a table
               </Link>
             </Reveal>
           </div>

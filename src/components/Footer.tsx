@@ -17,9 +17,21 @@ function TikTokIcon(props: React.SVGProps<SVGSVGElement>) {
 export function Footer() {
   return (
     <footer className="border-t border-border bg-surface pb-32 pt-20 md:pb-40">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-4">
-        <div className="md:col-span-2">
-          <p className="font-serif text-2xl tracking-[0.14em]">MAK PALACE HOTEL</p>
+      <div className="mx-auto grid max-w-7xl gap-10 sm:gap-12 px-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="sm:col-span-2 lg:col-span-2">
+          <div className="flex items-center gap-3.5">
+            <div className="relative shrink-0">
+              <img
+                src="/logo.png"
+                alt="Mak Palace Hotel Logo"
+                className="h-12 sm:h-14 w-auto max-w-[120px] object-contain filter drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)]"
+              />
+            </div>
+            <div>
+              <p className="font-serif text-xl sm:text-2xl tracking-[0.12em] text-foreground">MAK PALACE HOTEL</p>
+              <p className="text-[0.6rem] tracking-[0.3em] text-gold uppercase">SIALKOT</p>
+            </div>
+          </div>
           <div className="gold-rule mt-4" />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
             A quiet address in Sialkot, built around long evenings, considered service and rooms
@@ -51,20 +63,20 @@ export function Footer() {
         <div>
           <p className="eyebrow">Contact</p>
           <div className="mt-5 flex flex-col gap-3 text-sm text-muted-foreground">
-            <span className="flex items-start gap-3">
+            <span className="flex items-start gap-3 min-w-0">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-              <span>{HOTEL_ADDRESS}</span>
+              <span className="min-w-0">{HOTEL_ADDRESS}</span>
             </span>
-            <a href={`tel:${HOTEL_PHONE_RAW}`} className="flex items-center gap-3 hover:text-gold">
+            <a href={`tel:${HOTEL_PHONE_RAW}`} className="flex items-center gap-3 hover:text-gold min-w-0">
               <Phone className="h-4 w-4 shrink-0 text-gold" />
-              {HOTEL_PHONE}
+              <span>{HOTEL_PHONE}</span>
             </a>
             <a
               href="mailto:stay@makpalacehotel.com"
-              className="flex items-center gap-3 hover:text-gold"
+              className="flex items-center gap-3 hover:text-gold min-w-0"
             >
               <Mail className="h-4 w-4 shrink-0 text-gold" />
-              stay@makpalacehotel.com
+              <span className="truncate text-xs sm:text-sm">stay@makpalacehotel.com</span>
             </a>
           </div>
           <div className="mt-6 flex items-center gap-4 text-muted-foreground">

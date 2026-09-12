@@ -1,4 +1,4 @@
-# Mak Palace Luxury
+# Mak Palace Hotel Luxury
 
 this is reference link (https://www.lasalaplazahotel.com/)
 

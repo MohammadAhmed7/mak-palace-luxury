@@ -225,22 +225,22 @@ export function StickyBookingBar() {
             </div>
           </div>
         )}
-        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3">
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2 xs:gap-3 px-3 xs:px-4 py-2.5 xs:py-3">
           <button
-            className="flex min-w-0 items-center gap-3 text-left"
+            className="flex min-w-0 items-center gap-1.5 xs:gap-2 sm:gap-3 text-left"
             onClick={() => setExpanded((v) => !v)}
           >
             <CalendarDays className="h-4 w-4 shrink-0 text-gold" />
-            <span className="truncate text-xs tracking-[0.12em] text-muted-foreground">
+            <span className="truncate text-[0.68rem] xs:text-xs tracking-[0.05em] xs:tracking-[0.1em] text-muted-foreground">
               {checkIn || "Check-in"} — {checkOut || "Check-out"}
             </span>
-            <Users className="h-4 w-4 shrink-0 text-gold" />
+            <Users className="h-3.5 w-3.5 xs:h-4 xs:w-4 shrink-0 text-gold ml-auto xs:ml-0" />
             <span className="shrink-0 text-xs text-muted-foreground">{guests}</span>
             <ChevronUp
               className={`h-4 w-4 shrink-0 text-muted-foreground transition-transform ${expanded ? "rotate-180" : ""}`}
             />
           </button>
-          <button className="btn-gold shrink-0 px-4 py-2" onClick={submit}>
+          <button className="btn-gold shrink-0 px-3 xs:px-4 py-2 text-xs xs:text-sm font-semibold" onClick={submit}>
             Book
           </button>
         </div>

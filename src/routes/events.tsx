@@ -3,8 +3,7 @@ import { Reveal } from "@/components/Reveal";
 import { PageHeader } from "@/components/PageHeader";
 import { useBooking } from "@/components/BookingProvider";
 import { HOTEL_NAME, whatsappUrl } from "@/lib/booking";
-import imgBanquet from "@/assets/img-banquet.png";
-import imgRestaurant from "@/assets/img-restaurant.png";
+
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -49,7 +48,7 @@ function EventsPage() {
         eyebrow="Banquet & Events"
         title="One hall, held to one standard"
         intro="High ceilings, three hundred covers, and a single coordinator who stays with your event from the first call."
-        image={imgBanquet}
+        image="/events-images/banquet-hall-hero.jpg"
       />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:py-28">
@@ -70,7 +69,7 @@ function EventsPage() {
         <div className="mx-auto grid items-center gap-10 px-4 py-16 sm:gap-14 sm:px-6 sm:py-24 lg:max-w-7xl lg:grid-cols-2 lg:py-28">
           <Reveal>
             <img
-              src={imgBanquet}
+              src="/events-images/banquet-hall-lounge.jpg"
               alt="Banquet hall before an event"
               loading="lazy"
               width={1920}
@@ -120,8 +119,8 @@ function EventsPage() {
 
       <section className="relative overflow-hidden">
         <img
-          src={imgRestaurant}
-          alt="Tables set before service"
+          src="/events-images/banquet-hall-event-live.jpg"
+          alt="Banquet hall event live celebration"
           loading="lazy"
           width={1600}
           height={1000}

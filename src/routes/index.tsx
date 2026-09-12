@@ -9,7 +9,7 @@ import hero3 from "@/assets/hero-3.jpg";
 import imgDeluxeRoom from "@/assets/img-deluxe-room.jpg";
 import imgTripleSuperior from "@/assets/img-triple-superior.png";
 import imgLobby from "@/assets/img-lobby.jpg";
-import imgBanquet from "@/assets/img-banquet.png";
+const imgBanquet = "/home-banquet.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
